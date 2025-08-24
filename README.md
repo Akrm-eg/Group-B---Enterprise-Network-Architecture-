@@ -15,7 +15,7 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 ---
 
 ## 👥 Team Members
-- Akram Usama  
+- Akrm Usama  
 - Husein Mohamed  
 - Hanaa Elhamamy  
 - Mohamed Ramadan  
