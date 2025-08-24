@@ -1,6 +1,6 @@
 # 🌐 Enterprise Network Architecture (Huawei Datacom)
 
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge)
 ![Huawei](https://img.shields.io/badge/Platform-Huawei%20Datacom-red?style=for-the-badge&logo=huawei)
 ![Simulation](https://img.shields.io/badge/Simulator-eNSP-blue?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Enabled-success?style=for-the-badge&logo=shield)
@@ -70,6 +70,16 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 - ✅ 24/7 CCTV availability from HQ  
 - ✅ Guest VLAN Internet-only access  
 - ✅ Printers only accessible within local VLAN  
+
+---
+
+## 📊 Project Progress
+- [x] Network architecture design  
+- [x] VLAN planning & segmentation  
+- [ ] Device configuration (routers, switches, firewalls)  
+- [ ] Service deployment (DHCP, AAA, FTP, VoIP, CCTV)  
+- [ ] Testing & validation against acceptance criteria  
+- [ ] Final documentation & optimization  
 
 ---
 
