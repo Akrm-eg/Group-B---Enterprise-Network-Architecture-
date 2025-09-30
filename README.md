@@ -37,7 +37,6 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 ## 🏗️ Network Design
 - **Central Services at HQ:** DHCP, FTP, AAA, VoIP PBX, Core NVR  
 - **ISP Connectivity:** PPPoE links via routers  
-- **Secure Overlay:** Huawei USG Firewalls (IPSec VPN tunnels)  
 - **Local Access:** Switches + Wireless APs  
 - **CCTV:** Distributed NVRs with central HQ access  
 
@@ -57,7 +56,6 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 ---
 
 ## 🔐 Security Features
-- Huawei USG **firewall filtering**  
 - **ACLs** for sensitive resources (FTP, CCTV)  
 - **WPA2/3 wireless security**  
 - **DHCP snooping & ARP inspection**  
@@ -66,7 +64,6 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 
 ## ✅ Acceptance Criteria
 - ✅ 100% DHCP functionality across all sites  
-- ✅ VoIP MOS > 4 (excellent quality)  
 - ✅ 24/7 CCTV availability from HQ  
 - ✅ Guest VLAN Internet-only access  
 - ✅ Printers only accessible within local VLAN  
@@ -76,8 +73,8 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 ## 📊 Project Progress
 - [x] Network architecture design  
 - [x] VLAN planning & segmentation  
-- [ ] Device configuration (routers, switches, firewalls)  
-- [ ] Service deployment (DHCP, AAA, FTP, VoIP, CCTV)  
+- [x] Device configuration (routers, switches, firewalls)  
+- [x] Service deployment (DHCP, AAA, FTP, VoIP, CCTV)  
 - [ ] Testing & validation against acceptance criteria  
 - [ ] Final documentation & optimization  
 
@@ -88,8 +85,6 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 - Huawei USG Firewalls  
 - VLANs & ACLs  
 - DHCP, AAA  
-- VPN / IPSec  
-- VoIP (PBX & IP Phones)  
 - FTP & CCTV (NVR)  
 
 ---
@@ -97,7 +92,3 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 ## 📌 Conclusion
 This design provides a **scalable, secure, and future-ready enterprise network**, supporting business-critical services while ensuring **performance, reliability, and security**.
 
----
-
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).
