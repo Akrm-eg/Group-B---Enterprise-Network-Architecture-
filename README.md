@@ -10,7 +10,7 @@
 
 ## 📖 Overview
 This project implements a **secure and resilient enterprise network architecture** using **Huawei Datacom technologies** in a simulated **eNSP environment**.  
-It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated ISP, ensuring **secure connectivity, centralized services, and high availability**.
+It connects a **Headquarters (HQ)** and **Other Branch Offices** over a simulated ISP, ensuring **secure connectivity, centralized services, and high availability**.
 
 ---
 
@@ -28,7 +28,7 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 - 🖥️ **Centralized Services** at HQ (DHCP, FTP, AAA, VoIP, CCTV NVR)  
 - 🖨️ **Site-local services** (printing, local NVR)  
 - 📶 **Wireless & Wired Access** for employees and guests  
-- 🛡️ **Traffic Segmentation with VLANs** (Employees, Guest, Servers, CCTV, Printers, Management)  
+- 🛡️ **Traffic Segmentation with VLANs** (Employees, Guest, Servers, CCTV, Printers, Management,.......)  
 - 🔄 **Redundant DHCP** for reliability  
 - ⚙️ **Centralized Management & Security**  
 
@@ -36,23 +36,34 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 
 ## 🏗️ Network Design
 - **Central Services at HQ:** DHCP, FTP, AAA, VoIP PBX, Core NVR  
-- **ISP Connectivity:** PPPoE links via routers  
+- **ISP Connectivity:** RIP protocol simulating ISP routers  
 - **Local Access:** Switches + Wireless APs  
-- **CCTV:** Distributed NVRs with central HQ access  
+- **CCTV:** Distributed NVRs with central HQ access
+- **VOIP:** Separated Server for every branch 
 
 ---
 
-## 🌐 VLAN Architecture
+## 🌐 HQ VLAN  Architecture
 | VLAN ID | Subnet Example   | Purpose             |
-|---------|-----------------|---------------------|
-| 10      | 10.10.x.0/24    | Employees           |
-| 20      | 10.20.x.0/24    | Voice / VoIP        |
-| 30      | 10.30.x.0/24    | Servers (FTP, AAA)  |
-| 40      | 10.40.x.0/24    | CCTV + NVR          |
-| 50      | 10.50.x.0/24    | Guest Internet      |
-| 60      | 10.60.x.0/24    | Printers            |
-| 200     | 10.200.x.0/24   | Management          |
+|---------|------------------|---------------------|
+| 10      | 10.0.x.0/24      | Employees           |
+| 20      | 10.0.x.0/24      | Voice / VoIP        |
+| 30      | 10.0.x.0/24      | Servers (FTP, AAA)  |
+| 40      | 10.0.x.0/24      | CCTV + NVR          |
+| 50      | 10.0.x.0/24      | Guest Internet      |
+| 60      | 10.0.x.0/24      | Printers            |
+| 200     | 10.0.x.0/24      | Management          |
 
+## 🌐 Branch VLAN  Architecture
+| VLAN ID | Subnet Example   | Purpose             |
+|---------|------------------|---------------------|
+| 10      | 10.2.x.0/24      | Employees           |
+| 20      | 10.2.x.0/24      | Voice / VoIP        |
+| 30      | 10.2.x.0/24      | Servers (FTP, AAA)  |
+| 40      | 10.2.x.0/24      | CCTV + NVR          |
+| 50      | 10.2.x.0/24      | Guest Internet      |
+| 60      | 10.2.x.0/24      | Printers            |
+| 200     | 10.2.x.0/24      | Management          |
 ---
 
 ## 🔐 Security Features
@@ -82,10 +93,10 @@ It connects a **Headquarters (HQ)** and **two Branch Offices** over a simulated 
 
 ## 🛠️ Tools & Technologies
 - Huawei eNSP  
-- Huawei USG Firewalls  
 - VLANs & ACLs  
-- DHCP, AAA  
-- FTP & CCTV (NVR)  
+- DHCP, AAA , VRRP , GRE , RIP 
+- FTP & CCTV (NVR)
+- VOIP 
 
 ---
 
