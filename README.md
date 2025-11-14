@@ -86,8 +86,8 @@ It connects a **Headquarters (HQ)** and **Other Branch Offices** over a simulate
 - [x] VLAN planning & segmentation  
 - [x] Device configuration (routers, switches, firewalls)  
 - [x] Service deployment (DHCP, AAA, FTP, VoIP, CCTV)  
-- [ ] Testing & validation against acceptance criteria  
-- [ ] Final documentation & optimization  
+- [x] Testing & validation against acceptance criteria  
+- [x] Final documentation & optimization  
 
 ---
 
