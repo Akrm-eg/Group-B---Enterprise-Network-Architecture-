@@ -1,6 +1,6 @@
 # 🌐 Enterprise Network Architecture (Huawei Datacom)
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Finished-green?style=for-the-badge)
 ![Huawei](https://img.shields.io/badge/Platform-Huawei%20Datacom-red?style=for-the-badge&logo=huawei)
 ![Simulation](https://img.shields.io/badge/Simulator-eNSP-blue?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Enabled-success?style=for-the-badge&logo=shield)
@@ -19,7 +19,7 @@ It connects a **Headquarters (HQ)** and **Other Branch Offices** over a simulate
 - Husein Mohamed  
 - Hanaa Elhamamy  
 - Mohamed Ramadan  
-- Mahmoud Rezk  
+
 
 ---
 
